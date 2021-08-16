@@ -1,5 +1,7 @@
-<mat-toolbar>
+<mat-toolbar class="mat-right">
   Mean Stack Application
+<!--  <button mat-raised-button color="accent"><a routerLink="/profile" *ngIf="user">Profile</a></button>-->
+  <button mat-raised-button color="warn" *ngIf="currentUser" (click)="logout()">Logout</button>
 </mat-toolbar>
 <div>
   <router-outlet></router-outlet>
