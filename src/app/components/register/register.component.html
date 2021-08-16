@@ -1,0 +1,28 @@
+<div>
+  <br>
+  <mat-card>
+    <section class="mat-typography">
+      <h3>Register</h3>
+    </section>
+    <mat-divider></mat-divider>
+    <br>
+    <form [formGroup]="registerForm" class="create_form">
+      <mat-form-field class="full-width">
+        <input  type="text" matInput placeholder="Enter Name" formControlName="name" #name>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input  type="text" matInput placeholder="Enter Username" formControlName="username" #username>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input type="email" matInput placeholder="Enter Email Address" formControlName="email" #email>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input type="password" matInput placeholder="Enter Password" formControlName="password" #password>
+      </mat-form-field>
+      <mat-divider></mat-divider>
+      <br><br>
+      <button mat-raised-button type="button" color="accent" routerLink="/list">Back</button>
+      <button mat-raised-button type="submit" color="primary" (click)="register()" [disabled]="registerForm.pristine || registerForm.invalid">Save</button>
+    </form>
+  </mat-card>
+</div>

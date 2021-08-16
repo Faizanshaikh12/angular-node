@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## MEAN STACK APPLICATION (MONGODB-EXPRESSJS-ANGULAR-NODEJS)
+-> create angular project
+-> implements the crud NodeJs Apis Integrate Angular
+  -> GET
+  -> POST
+  -> DELETE
+  -> UPDATE
+
+-> implements the User Authentication
+  -> NodeJs Login Apis Integrate Angular
+  -> NodeJs Register Apis Integrate Angular
+
+-> Completed Logout Functionality
+-> Auth Guard use that.
